@@ -23,7 +23,7 @@
 
 .light-mode {
   --color-primary: #FFFFFF;
-  --color-secondary: #F56692;
+  --color-secondary: #fc4646;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -328,12 +328,16 @@ section {
 }
 
 .stat-title {
+  
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
   padding: 3.5rem 0;
-  position: relative;
+  
+  
 }
+
+
 .stat-title::before {
   content: "";
   position: absolute;
@@ -383,6 +387,10 @@ section {
   font-weight: 500;
 }
 
+.timeline .timeline-item .tl-duration .span {
+ background-color: var(--color-secondary);
+}
+
 .timeline .timeline-item .tl-location {
   padding: 0.2rem 0.6rem;
   background-color: var(--color-grey-5);
@@ -392,6 +400,7 @@ section {
   text-transform: uppercase;
   font-weight: 500;
 }
+
 .timeline .timeline-item h5 {
   padding: 1rem 0;
   text-transform: uppercase;
